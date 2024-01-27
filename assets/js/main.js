@@ -31,10 +31,12 @@
   // mobile menu start
   let menutoggole = document.querySelector(".toggle_menu");
   let mobilemenu = document.querySelector(".mobile-menu");
-  menutoggole.onclick = function () {
-    menutoggole.classList.toggle("active");
-    mobilemenu.classList.toggle("active");
-  };
+  if (menutoggole) {
+    menutoggole.onclick = function () {
+      menutoggole.classList.toggle("active");
+      mobilemenu.classList.toggle("active");
+    };
+  }
   // mobile menu end
 
   // dark mood start
